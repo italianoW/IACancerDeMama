@@ -6,6 +6,6 @@ def test_treino():
     
     local_model = model.model()
     
-    train.train_model(local_model)
+    trained_model = train.train_model(local_model)
      
-    assert hasattr(local_model, "_is_fitted") and local_model._is_fitted, "O modelo não foi treinado"
+    assert hasattr(trained_model, "_is_fitted") and trained_model._is_fitted, "O modelo não foi treinado"
